@@ -36,6 +36,10 @@ timezone: Europe/Amsterdam
 include:
   - _pages
 
+paginate: 5
+paginate_path: /recent/page:num/
+
+
 
 plugins:
   - jekyll-paginate
@@ -67,7 +71,7 @@ plugins:
 
 author:
   name   : "Derck Prinzhron"
-  avatar : "path to me"
+  avatar : "assets/images/derck2023.jpeg"
   bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
 
 

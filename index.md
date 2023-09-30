@@ -6,5 +6,5 @@ layout: home
 author_profile: true
 ---
 
-![derck](path/to/derck){: style="float: right; margin: 0px 20px; width: 204px; height: 362px" }
+![derck]("assets/images/derck2023.jpeg"){: style="float: right; margin: 0px 20px; width: 204px; height: 362px" }
 

@@ -1,10 +1,9 @@
 ---
-layout: home
+layout: single
 title: About
 permalink: /about/
 ---
 
-## About
 
 
 

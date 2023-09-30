@@ -76,7 +76,7 @@ author:
   bio    : "I am a MSc Artificial Intelligence (AI) student at the University of Amsterdam (UvA)."
   links:
   - label: "GitHub"
-    icon: "fas fa-fw fa-github"
+    icon: "fab fa-fw fa-github"
     url: "https://github.com/dweprinz"
   - label: "LinkedIn"
     icon: "fab fa-fw fa-linkedin"
@@ -85,7 +85,7 @@ author:
 footer:
   links:
     - label: "GitHub"
-      icon: "fas fa-fw fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/dweprinz"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"

@@ -70,7 +70,7 @@ plugins:
 #   - vendor/ruby/
 
 author:
-  name   : "Derck Prinzhron"
+  name   : "Derck Prinzhorn"
   avatar : "{{ site.baseurl }}/assets/derck2023.jpeg"
   bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
 

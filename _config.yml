@@ -72,7 +72,7 @@ plugins:
 
 author:
   name   : "Derck Prinzhorn"
-  avatar : "/images/assets/derck2023.jpeg"
+  avatar : "/assets/images/derck2023.jpeg"
   bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
 
 footer:

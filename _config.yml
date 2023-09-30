@@ -74,7 +74,24 @@ author:
   avatar : "assets/derck2023.jpeg"
   bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
 
-
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fas fa-fw fa-github"
+      url: "https://github.com/dweprinz"
+    # - label: "CV"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "/assets/share/cv.pdf"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
+    # - label: "Pepper"
+    #   icon: "fas fa-pepper-hot"
+    #   url: "/pepper/"
+      
 defaults:
   # _posts
   - scope:

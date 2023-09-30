@@ -23,6 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website. I write about my study, my work and interests.
 github_username:  dweprinz
 minimal_mistakes_skin: default
+repository: "dweprinz/dweprinz.github.io"
 search: true
 # Build settings
 remote_theme: mmistakes/minimal-mistakes
@@ -71,7 +72,7 @@ plugins:
 
 author:
   name   : "Derck Prinzhorn"
-  avatar : "/assets/derck2023.jpeg"
+  avatar : "/images/assets/derck2023.jpeg"
   bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
 
 footer:

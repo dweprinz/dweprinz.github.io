@@ -24,16 +24,19 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username:  dweprinz
 minimal_mistakes_skin: default
 search: true
-
-
-timezone: Europe/Amsterdam  
-
-
-
 # Build settings
 remote_theme: mmistakes/minimal-mistakes
 
-theme: minima
+permalink: /:categories/:title/
+
+# theme: minima
+
+timezone: Europe/Amsterdam  
+
+include:
+  - _pages
+
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -61,3 +64,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name   : "Derck Prinzhron"
+  avatar : "path to me"
+  bio    : "I am a student at the University of Amsterdam. I study Artificial Intelligence and I am interested in Machine Learning, Data Science and Software Engineering."
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

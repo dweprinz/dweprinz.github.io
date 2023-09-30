@@ -74,6 +74,13 @@ author:
   name   : "Derck Prinzhorn"
   avatar : "/assets/images/Derck.png"
   bio    : "I am a MSc Artificial Intelligence (AI) student at the University of Amsterdam (UvA)."
+  links:
+  - label: "GitHub"
+    icon: "fas fa-fw fa-github"
+    url: "https://github.com/dweprinz"
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/derckprinzhorn/"
 
 footer:
   links:

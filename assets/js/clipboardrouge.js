@@ -1,6 +1,6 @@
 // Clipboard
 // This makes the button blink 250 miliseconds
-
+// https://github.com/mmistakes/minimal-mistakes/discussions/2795
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }

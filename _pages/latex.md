@@ -12,6 +12,7 @@ https://www.overleaf.com/learn/latex/Matrices
 https://jasonwarta.github.io/latex-matrix/
 
 **Column vector**
+
 $$
 \begin{bmatrix}
            x_{1} \\
@@ -30,6 +31,7 @@ $$
 ```
 
 **Row vector**
+
 $$
 \begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
 $$
@@ -52,6 +54,7 @@ a & b & c
 \end{bmatrix}
 ```
 **Big matrix**
+
 $$
 A_{n\times d} = \begin{bmatrix}
     x_{11} & x_{12} & x_{13} & \dots  & x_{1d} \\
@@ -71,6 +74,7 @@ $$
 
 
 **Mean**
+
 $$
 \mathbb{E}[x] = \frac{1}{N}\sum_{n=1}^N x_n
 $$

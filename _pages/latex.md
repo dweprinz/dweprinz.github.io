@@ -30,13 +30,13 @@ $$
 \end{bmatrix}
 ```
 ---
-**Row vector**
+**Row vector (transposed)**
 
 $$
-\begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
+\begin{bmatrix} x_{1} & x_{2}  & \dots & x_{D} \end{bmatrix}^T
 $$
 ```
-\begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
+\begin{bmatrix} x_{1} & x_{2}  & \dots & x_{D} \end{bmatrix}^T
 ```
 ---
 **Matrix**

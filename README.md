@@ -17,4 +17,4 @@ To do:
 
 - [ ] Explore clipboard on latex render
 - [ ] Update README.md
-- [ ] 
+- [ ] Add page with useful resources

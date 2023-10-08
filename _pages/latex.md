@@ -1,7 +1,7 @@
 ---
 layout: single
-title: About
-permalink: /about/
+title: LaTeX
+permalink: /latex/
 ---
 
 ## Matrices and vectors

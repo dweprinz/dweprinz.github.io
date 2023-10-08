@@ -1,3 +1,9 @@
+---
+layout: single
+title: About
+permalink: /about/
+---
+
 ## Matrices and vectors
 https://www.overleaf.com/learn/latex/Matrices
 

@@ -7,7 +7,8 @@ permalink: /latex/
 ## Matrices and vectors
 https://www.overleaf.com/learn/latex/Matrices
 
-**Generate latex matrix**</br>
+**Generate latex matrix**
+
 https://jasonwarta.github.io/latex-matrix/
 
 **Column vector**

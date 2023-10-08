@@ -5,11 +5,11 @@ permalink: /latex/
 ---
 
 ## Matrices and vectors
-https://www.overleaf.com/learn/latex/Matrices
+[https://www.overleaf.com/learn/latex/Matrices]([https://www.overleaf.com/learn/latex/Matrices])
 
 **Generate latex matrix**
 
-https://jasonwarta.github.io/latex-matrix/
+[https://jasonwarta.github.io/latex-matrix/]([https://www.overleaf.com/learn/latex/Matrices])
 
 **Column vector**
 
@@ -39,6 +39,7 @@ $$
 \begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
 ```
 **Matrix**
+
 $$
 \begin{bmatrix}
 1 & 2 & 3\\

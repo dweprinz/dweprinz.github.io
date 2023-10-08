@@ -29,7 +29,7 @@ $$
            x_{m}
 \end{bmatrix}
 ```
-
+---
 **Row vector**
 
 $$
@@ -38,6 +38,7 @@ $$
 ```
 \begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
 ```
+---
 **Matrix**
 
 $$
@@ -54,6 +55,7 @@ $$
 a & b & c
 \end{bmatrix}
 ```
+---
 **Big matrix**
 
 $$
@@ -72,8 +74,7 @@ $$
     x_{n1} & x_{n2} & x_{n3} & \dots  & x_{nd}
 \end{bmatrix}
 ```
-
-
+---
 **Mean**
 
 $$

@@ -5,11 +5,11 @@ permalink: /latex/
 ---
 
 ## Matrices and vectors
-[https://www.overleaf.com/learn/latex/Matrices]([https://www.overleaf.com/learn/latex/Matrices])
+[https://www.overleaf.com/learn/latex/Matrices](https://www.overleaf.com/learn/latex/Matrices)
 
 **Generate latex matrix**
 
-[https://jasonwarta.github.io/latex-matrix/]([https://www.overleaf.com/learn/latex/Matrices])
+[https://jasonwarta.github.io/latex-matrix/](https://www.overleaf.com/learn/latex/Matrices)
 
 **Column vector**
 

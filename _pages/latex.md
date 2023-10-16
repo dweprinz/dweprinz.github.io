@@ -30,13 +30,13 @@ $$
 \end{bmatrix}
 ```
 ---
-**Row vector (transposed)**
+**Row vector**
 
 $$
-\begin{bmatrix} x_{1} & x_{2}  & \dots & x_{D} \end{bmatrix}^T
+\begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
 $$
 ```
-\begin{bmatrix} x_{1} & x_{2}  & \dots & x_{D} \end{bmatrix}^T
+\begin{bmatrix} \bar{x}{1} & \bar{x}{2}  & \dots & \bar{x}_{D} \end{bmatrix}^T
 ```
 ---
 **Matrix**
@@ -75,6 +75,21 @@ $$
 \end{bmatrix}
 ```
 ---
+**Cases**
+$$
+ X = \begin{cases}
+      0, & \text{if}\ a=1 \\
+      1, & \text{otherwise}
+    \end{cases}
+$$
+```
+\begin{cases}
+    0, & \text{if}\ a=1 \\
+    1, & \text{otherwise}
+\end{cases}
+```
+
+## Probability
 **Mean**
 
 $$
@@ -82,6 +97,27 @@ $$
 $$
 ```
 \mathbb{E}[x] = \frac{1}{N}\sum_{n=1}^N x_n
+```
+---
+**Variance and covariance**
+$$\mathrm{Var}[x]$$
+$$\mathbb{V}[x]$$
+$$\mathrm{Cov}[x,x]$$
+
+```
+\mathrm{Var}[x]
+\mathbb{V}[x]
+\mathrm{Cov}[x,x]
+```
+---
+**Overset and underset**
+$$\overset{\mathrm{i.i.d.}}{=}$$
+```
+\overset{\mathrm{i.i.d.}}{=}
+```
+$$\underset{\mathrm{x \rightarrow 0}}{=}$$
+```
+\underset{\mathrm{x \rightarrow 0}}{=}
 ```
 
 ## Custom operators

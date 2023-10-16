@@ -76,6 +76,7 @@ $$
 ```
 ---
 **Cases**
+
 $$
  X = \begin{cases}
       0, & \text{if}\ a=1 \\
@@ -100,6 +101,7 @@ $$
 ```
 ---
 **Variance and covariance**
+
 $$\mathrm{Var}[x]$$
 $$\mathbb{V}[x]$$
 $$\mathrm{Cov}[x,x]$$
@@ -111,6 +113,7 @@ $$\mathrm{Cov}[x,x]$$
 ```
 ---
 **Overset and underset**
+
 $$\overset{\mathrm{i.i.d.}}{=}$$
 ```
 \overset{\mathrm{i.i.d.}}{=}

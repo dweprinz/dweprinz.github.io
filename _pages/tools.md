@@ -4,6 +4,6 @@ title: Tools
 permalink: /tools/
 ---
 
-## LaTex
+## LaTex & Markdown
 [LaTeX frequently used](latex.md)
-
+[Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

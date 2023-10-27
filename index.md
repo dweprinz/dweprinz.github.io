@@ -11,8 +11,9 @@ author_profile: true
 <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
 
 -->
-
+# About me
 Hi, welcome to my website!
+
 My name is Derck and I'm currently a Master's student in Artificial Intelligene (AI) at the University of Amsterdam (UvA). Next to this, I work as a Machine Learning architect. I am interested in AI Safety, Conformal Prediction and EdTech. 
 
 

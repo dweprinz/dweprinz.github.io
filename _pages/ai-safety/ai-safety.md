@@ -3,7 +3,12 @@ layout: single
 title: AI Safety
 permalink: ai-safety/ai-safety/
 ---
-On this page, the resources I liked the most are listed.
+
+More about:
+- [Adversarial Robustness](adversarial-robustness)
+
+
+On this page, below, a lot of resources on various topics are listed.
 
 # Theory
 - [https://aisafetyfundamentals.com/](https://aisafetyfundamentals.com/) (2023)
@@ -11,24 +16,44 @@ On this page, the resources I liked the most are listed.
 # Organizations
 - [https://aisafety.world/](https://aisafety.world/) (2023)
 
-# Technical tools
+# Open-source toolkits
 
-## Explainability
+## Interpretability and Explainability
 - [Explabox](https://github.com/MarcelRobeer/explabox) (2022)
 - [IBM: AIX360](https://github.com/Trusted-AI/AIX360) (2019)
+- [Microsoft: Responsible AI Toolbox](https://responsibleaitoolbox.ai/) (2021)
+    - Dashboard that integrates: Error analysis, Fairlearn, InterpretML, DiCE, EconML and Data Balance
+- [InterpretML](https://github.com/interpretml/interpret-community)
+    - SHAP, Mimic and LIME explainers. Permutation feature importance.
+- [MI2.ai](Ihttps://www.mi2.ai/)
+    - [DrWhy](https://github.com/ModelOriented/DrWhy/tree/master) (2019)
+        - DALEX, survex, Arena, fairmodels,
+    - Currently working on: ARES, xSurvival, Large Model Analysis
+- [XAI](https://github.com/EthicalML/xai) (2018)
+
 
 ## Fairness
 - [IBM: Fairness 360](https://www.ibm.com/opensource/open/projects/ai-fairness-360/)
+- [Fairlearn](https://fairlearn.org/)
 
 ## Adversarial robustness
 - [IBM: ART](https://github.com/Trusted-AI/adversarial-robustness-toolbox) (2018)
 - [IBM: URET](https://github.com/IBM/URET) (2023)
     - [Paper](https://arxiv.org/pdf/2308.01840.pdf)
+- [TextAttack](https://github.com/QData/TextAttack) (2020)
+- [Advertorch](https://github.com/BorealisAI/advertorch) (2019)
+- [Ares](https://github.com/thu-ml/ares)
+- [MART](https://github.com/IntelLabs/MART)
+- [FSR](https://github.com/wkim97/FSR) (2023)
+
+## Causal analysis
+- [EconML](https://github.com/py-why/EconML)
+- [DiCE](https://github.com/interpretml/DiCE)
 
 # MLOps
 ## Model repositories
 - [IBM: Factsheets](https://aifs360.res.ibm.com/) 
-
+- [Model card toolkit](https://github.com/tensorflow/model-card-toolkit)
 
 ## Platforms
 - [wandb.ai](https://wandb.ai/site)

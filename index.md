@@ -9,7 +9,8 @@ author_profile: true
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 -->
- 
+<a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
+
 Hi, welcome to my website!
 
 # Current projects

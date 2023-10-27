@@ -29,7 +29,7 @@ $$
            x_{m}
 \end{bmatrix}
 ```
-***
+---
 **Row vector**
 
 $$
@@ -38,7 +38,7 @@ $$
 ```
 \begin{bmatrix} x_{1} & x_{2}  & \dots & x_{D} \end{bmatrix}^T
 ```
-***
+---
 **Matrix**
 
 $$
@@ -55,7 +55,7 @@ $$
 a & b & c
 \end{bmatrix}
 ```
-***
+---
 **Big matrix**
 
 $$
@@ -74,7 +74,7 @@ $$
     x_{n1} & x_{n2} & x_{n3} & \dots  & x_{nd}
 \end{bmatrix}
 ```
-***
+---
 **Cases**
 
 $$
@@ -99,7 +99,7 @@ $$
 ```
 \mathbb{E}[x] = \frac{1}{N}\sum_{n=1}^N x_n
 ```
-***
+---
 **Variance and covariance**
 
 $$\mathrm{Var}[x]$$
@@ -111,7 +111,7 @@ $$\mathrm{Cov}[x,x]$$
 \mathbb{V}[x]
 \mathrm{Cov}[x,x]
 ```
-***
+---
 **Overset and underset**
 
 $$\overset{\mathrm{i.i.d.}}{=}$$

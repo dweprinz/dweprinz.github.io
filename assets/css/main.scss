@@ -5,6 +5,8 @@ search: false
 
 @charset "utf-8";
 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
 
 html, html[data-theme="light"] {
@@ -65,5 +67,3 @@ p {
 	font-size: 1.25rem;
 }
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials

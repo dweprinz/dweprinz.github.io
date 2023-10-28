@@ -31,6 +31,11 @@ On this page, below, a lot of resources on various topics are listed.
         - DALEX, survex, Arena, fairmodels,
     - Currently working on: ARES, xSurvival, Large Model Analysis
 - [XAI](https://github.com/EthicalML/xai) (2018)
+- [ELI5](https://eli5.readthedocs.io/en/latest/overview.html)
+- [NN-SVG](https://alexlenail.me/NN-SVG/)
+- [Neptune-AI blog](https://neptune.ai/blog/ml-model-interpretation-tools)
+- [Neptune-AI blog](https://neptune.ai/blog/explainability-auditability-ml-definitions-techniques-tools)
+- [AI Ethics tool landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/)
 
 
 ## Fairness

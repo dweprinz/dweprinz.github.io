@@ -2,6 +2,7 @@
 layout: single
 title: LaTeX
 permalink: /latex/
+toc: true
 ---
 
 ## Matrices and vectors

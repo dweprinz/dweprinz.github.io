@@ -2,6 +2,9 @@
 layout: single
 title: AI Safety
 permalink: ai-safety/ai-safety/
+toc: true
+# toc_label: "My Table of Contents"
+# toc_icon: "cog"
 ---
 
 More about:

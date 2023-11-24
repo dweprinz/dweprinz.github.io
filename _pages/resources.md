@@ -2,6 +2,7 @@
 layout: single
 title: Resources
 permalink: /resources/
+toc: true
 ---
 These are my own resources, which I find useful to keep here. Feel free to take a look at them!
 

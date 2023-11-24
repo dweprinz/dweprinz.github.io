@@ -5,7 +5,7 @@ permalink: ai-safety/LLM/
 ---
 
 ## Toolkits
-- https://python.langchain.com/docs/guides/safety/
+- [https://python.langchain.com/docs/guides/safety/](https://python.langchain.com/docs/guides/safety/)
 
 
 ## Papers

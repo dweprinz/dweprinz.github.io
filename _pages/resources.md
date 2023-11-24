@@ -3,6 +3,7 @@ layout: single
 title: Resources
 permalink: /resources/
 ---
+These are my own resources, which I find useful to keep here. Feel free to take a look at them!
 
 ## LaTex & Markdown
 - [LaTeX frequently used](latex.md)

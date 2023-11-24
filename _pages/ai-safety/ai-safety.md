@@ -5,8 +5,8 @@ permalink: ai-safety/ai-safety/
 ---
 
 More about:
-- [Adversarial Robustness](adversarial-robustness)
-- [LLMs](LLM)
+- [Adversarial Robustness](adversarial-robustness.md)
+- [LLMs](LLM.md)
 
 
 On this page, below, a lot of resources on various topics are listed.

@@ -40,6 +40,8 @@ include:
 paginate: 5
 paginate_path: /recent/page:num/
 
+# enable search plugin
+search: true
 
 
 plugins:

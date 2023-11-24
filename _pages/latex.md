@@ -3,7 +3,6 @@ layout: single
 title: LaTeX
 permalink: /latex/
 toc: true
-search: true
 ---
 
 ## Matrices and vectors

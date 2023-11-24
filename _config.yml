@@ -43,18 +43,16 @@ paginate_path: /recent/page:num/
 # enable search plugin
 search: true
 
-lunr:
-  search_within_pages: true
-
 
 plugins:
   - jekyll-paginate
-  # - jekyll-sitemap
+  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
   - jekyll-katex
+  - json
   - jekyll-lunr-js-search
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -135,6 +133,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
 
 # compress files with whitespace and comments
 compress_html:

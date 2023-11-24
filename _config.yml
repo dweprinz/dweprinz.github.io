@@ -42,6 +42,7 @@ paginate_path: /recent/page:num/
 
 # enable search plugin
 search: true
+
 lunr:
   search_within_pages: true
 
@@ -54,6 +55,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-katex
+  - jekyll-lunr-js-search
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

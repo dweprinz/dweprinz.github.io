@@ -42,6 +42,8 @@ paginate_path: /recent/page:num/
 
 # enable search plugin
 search: true
+lunr:
+  search_within_pages: true
 
 
 plugins:
@@ -52,6 +54,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-katex
+  - jekyll-seo-tag
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -131,3 +134,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# compress files with whitespace and comments
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment

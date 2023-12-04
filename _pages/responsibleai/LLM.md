@@ -1,7 +1,7 @@
 ---
 layout: single
 title: LLMs and Safety
-permalink: ai-safety/LLM/
+permalink: responsibleai/LLM/
 ---
 
 ## Toolkits

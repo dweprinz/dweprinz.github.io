@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Uncertainty Quantification
-permalink: UQ/UQ/
+permalink: responsibleai/UQ/
 ---
 
 # Open-source Toolkits

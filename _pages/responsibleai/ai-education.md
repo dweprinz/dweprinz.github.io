@@ -10,14 +10,22 @@ toc: true
 - [Blog post about LLM risks](https://blog.allenai.org/using-large-language-models-with-care-eeb17b0aed27)
 - [Google introduction to Responsible AI](https://developers.google.com/machine-learning/resources/intro-responsible-ai)
 
-## Guidelines on ethical AI in education
+# Ethical AI in education
+## European Union resources
 - [On the futures of technology in education (2023)](https://op.europa.eu/en/publication-detail/-/publication/e4b09917-582f-11ee-9220-01aa75ed71a1/language-en/format-PDF/source-search)
 - [EU Ethical guidelines (2022)](https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en) :fire::fire::fire:
 - [Executive summary on AI in education (2022)](https://op.europa.eu/en/publication-detail/-/publication/7f64223f-540d-11ed-92ed-01aa75ed71a1/language-en/format-PDF/source-search)
 - [Emerging technologies and education (2020)](https://op.europa.eu/en/publication-detail/-/publication/c72792a7-084f-11eb-a511-01aa75ed71a1/language-en/format-PDF/source-search)
 - [Impact of AI on education (2018)](https://op.europa.eu/en/publication-detail/-/publication/5cb8eee3-e888-11e8-b690-01aa75ed71a1/language-en/format-PDF/source-search)
 
+## Blogs and articles
+- [Universiteit Leiden](https://www.staff.universiteitleiden.nl/education/it-and-education/ai-in-education)
+- [Paper: framework for responsble AI](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4544010)
+
 ## Interesting labs in Amsterdam
+- [AmsterdamAI](https://www.amsterdamai.com/en/)
+- [Innovation Center for AI (ICAI) Labs](https://www.uva.nl/en/research/research-at-the-uva/artificial-intelligence/collaboration/collaboration-on-ai.html)
+- [University of Utrecht](https://www.uu.nl/en/research/ai-data-science/responsible-ai)
 - [HvA responsible AI lab](https://www.hva.nl/appliedai/labs/responsible-ai-lab/responsible-ai-lab.html)
 
 

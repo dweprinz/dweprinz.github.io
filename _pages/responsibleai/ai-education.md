@@ -6,12 +6,12 @@ toc: true
 ---
 
 ## Introductory material to responsible AI
-- [Ethics guidelines for trustworthy AI](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai) :fire::fire::fire:
+- [Ethics guidelines for trustworthy AI (2019)](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai) :fire::fire::fire:
 - [Blog post about LLM risks](https://blog.allenai.org/using-large-language-models-with-care-eeb17b0aed27)
 - [Google introduction to Responsible AI](https://developers.google.com/machine-learning/resources/intro-responsible-ai)
 
 ## Guidelines on ethical AI in education
-- [On the futures of technology in education](https://op.europa.eu/en/publication-detail/-/publication/e4b09917-582f-11ee-9220-01aa75ed71a1/language-en/format-PDF/source-search)
+- [On the futures of technology in education (2023)](https://op.europa.eu/en/publication-detail/-/publication/e4b09917-582f-11ee-9220-01aa75ed71a1/language-en/format-PDF/source-search)
 - [EU Ethical guidelines (2022)](https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en) :fire::fire::fire:
 - [Executive summary on AI in education (2022)](https://op.europa.eu/en/publication-detail/-/publication/7f64223f-540d-11ed-92ed-01aa75ed71a1/language-en/format-PDF/source-search)
 - [Emerging technologies and education (2020)](https://op.europa.eu/en/publication-detail/-/publication/c72792a7-084f-11eb-a511-01aa75ed71a1/language-en/format-PDF/source-search)

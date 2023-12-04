@@ -21,6 +21,9 @@ In 2020 I started my Bachelor's in AI at the UvA. Next to studying, I worked as 
 
 # Current projects
 
+## Responsible AI
+A large part of my week is spent on responsible AI. At my job this is one of my main topics of interest. Outside of work I also work on responsible AI, mainly by reading blogs and papers. I primarily focus on AI in possible high-risk settings, such as policing, defense and education.
+
 ## AI Safety
 I have participated in the AGI Safety Fundamentals programme 2023, where I explored AI safety research with fellow interested students. I am currently a member of the recently founded AI Safety Initiative Amsterdam ([AISIA](https://aisafetyamsterdam.com/)). Recently I participated in an AI Safety Hackathon in Delft.
 

@@ -2,6 +2,7 @@
 layout: single
 title: Projects
 permalink: /projects/
+classes: wide
 ---
 
 I'm working on a range of projects throughout the year.

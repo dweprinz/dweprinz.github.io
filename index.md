@@ -4,6 +4,7 @@
 
 layout: single
 author_profile: true
+classes: wide
 ---
 <!-- website icon
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">

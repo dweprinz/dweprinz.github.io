@@ -134,6 +134,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      classes: wide
 
 # compress files with whitespace and comments
 compress_html:

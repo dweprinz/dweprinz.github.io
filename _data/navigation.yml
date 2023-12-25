@@ -3,8 +3,10 @@ main:
   #   url: /projects/
   - title: Home
     url: /
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /assets/share/cv_derckprinzhorn.pdf
   - title: Resources
     url: /resources/
-  - title: "CV"
-    url: /assets/share/cv_derckprinzhorn.pdf
 

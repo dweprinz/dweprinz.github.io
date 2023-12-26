@@ -17,3 +17,4 @@ To do:
 
 - [ ] Update README.md
 - [ ] Add matrix generator from fork
+- [ ] The follow button is above menu, looks like z-index issue

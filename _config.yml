@@ -41,7 +41,7 @@ paginate: 5
 paginate_path: /recent/page:num/
 
 # enable search plugin
-search: true
+search: false
 
 
 plugins:
@@ -55,8 +55,9 @@ plugins:
   - json
   - jekyll-lunr-js-search
 
-feed:
-  disable: true
+# https://github.com/mmistakes/minimal-mistakes/issues/1651
+atom_feed:
+  hide: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -101,6 +101,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/derckprinzhorn/"
+    - label: buy-me-a-coffee
+      icon: "fas fa-fw fa-coffee"
+      url: "https://www.buymeacoffee.com/derckprinzhorn"
     # - label: "CV"
     #   icon: "fas fa-fw fa-link"
     #   url: "/assets/share/cv.pdf"

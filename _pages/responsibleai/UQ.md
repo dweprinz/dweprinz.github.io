@@ -4,6 +4,15 @@ title: Uncertainty Quantification
 permalink: responsibleai/UQ/
 ---
 
+# Introduction to CP TS
+1. [TS Thesis](../../assets/share/BScThesis_DerckPrinzhorn.pdf)
+2. [Thesis slides](../../assets/share/presentation_thesis.pdf)
+3. [Introduction CP](https://arxiv.org/abs/2107.07511)
+4. [ACI](https://arxiv.org/abs/2202.07282)
+5. [EnbPI](https://proceedings.mlr.press/v139/xu21h.html)
+6. Bonus: [HopCPT](https://arxiv.org/abs/2303.12783)
+
+
 # Open-source Toolkits
 - [IBM: UQ 360](https://uq360.res.ibm.com/)
 - [Uncertainty Toolbox](https://github.com/uncertainty-toolbox/uncertainty-toolbox)

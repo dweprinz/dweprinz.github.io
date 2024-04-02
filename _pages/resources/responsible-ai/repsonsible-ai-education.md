@@ -1,7 +1,7 @@
 ---
 layout: single
 title: AI in Education
-permalink: responsibleai/responsible-ai-education/
+permalink: /resources/responsible-ai/responsible-ai-education/
 toc: true
 ---
 

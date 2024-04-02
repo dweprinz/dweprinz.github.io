@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Uncertainty Quantification
-permalink: responsibleai/UQ/
+permalink: /resources/responsible-ai/UQ/
 ---
 
 # Introduction to CP TS

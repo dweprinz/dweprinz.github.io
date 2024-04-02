@@ -1,7 +1,7 @@
 ---
 layout: single
 title: AI Safety
-permalink: responsibleai/ai-safety/
+permalink: /resources/responsible-ai/ai-safety/
 toc: true
 # toc_label: "My Table of Contents"
 # toc_icon: "cog"

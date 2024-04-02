@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Adversarial Robustness
-permalink: responsibleai/adversarial-robustness/
+permalink: /resources/responsible-ai/adversarial-robustness/
 ---
 
 Cool sources:

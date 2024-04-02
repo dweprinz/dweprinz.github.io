@@ -14,11 +14,11 @@ permalink: responsibleai/UQ/
 
 
 # Open-source Toolkits
+- [MAPIE](https://github.com/scikit-learn-contrib/MAPIE/tree/master)
 - [IBM: UQ 360](https://uq360.res.ibm.com/)
 - [Uncertainty Toolbox](https://github.com/uncertainty-toolbox/uncertainty-toolbox)
 - [SALib](https://github.com/SALib/SALib)
 - [AWS-fortuna](https://github.com/awslabs/fortuna)
-- [MAPIE](https://github.com/scikit-learn-contrib/MAPIE/tree/master)
 - [PPI](https://github.com/aangelopoulos/ppi_py)
 - [Raven](https://github.com/idaholab/raven)
 - [Crepes](https://github.com/henrikbostrom/crepes)

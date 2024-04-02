@@ -15,4 +15,4 @@ These are my own resources, which I find useful to keep here. Feel free to take 
 ## Responsible AI
 - [AI in education](responsibleai/ai-education.md)
 - [AI Safety](responsibleai/ai-safety.md)
-- [UQ](responsibleai/UQ.md)
+- [Uncertainty Quantification](responsibleai/UQ.md)

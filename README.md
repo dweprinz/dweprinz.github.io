@@ -4,9 +4,13 @@ bundle
 ```
 
 ```
-bundle update
+bundle install
 ```
 
+```
+bundle update
+```
+https://bundler.io/guides/using_bundler_in_applications.html
 
 Used theme:
 

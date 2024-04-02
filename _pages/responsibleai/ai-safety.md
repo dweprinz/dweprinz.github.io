@@ -20,9 +20,13 @@ On this page, below, a lot of resources on various topics are listed.
 # Organizations
 - [https://aisafety.world/](https://aisafety.world/) (2023)
 
+# Funding
+
+
 # Open-source toolkits
 
 ## Interpretability and Explainability
+### Explainability, counterfactuals and probing
 - [Explabox](https://github.com/MarcelRobeer/explabox) (2022)
 - [IBM: AIX360](https://github.com/Trusted-AI/AIX360) (2019)
 - [Microsoft: Responsible AI Toolbox](https://responsibleaitoolbox.ai/) (2021)
@@ -39,6 +43,15 @@ On this page, below, a lot of resources on various topics are listed.
 - [Neptune-AI blog](https://neptune.ai/blog/ml-model-interpretation-tools)
 - [Neptune-AI blog](https://neptune.ai/blog/explainability-auditability-ml-definitions-techniques-tools)
 - [AI Ethics tool landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/)
+
+### Mechanistic interpretability
+- [TransformerLens](https://pypi.org/project/transformer-lens/)
+- [Pyvene (intervention focused)](https://github.com/stanfordnlp/pyvene?tab=readme-ov-file)
+- [Transformer Debugger (OpenAI)](https://github.com/openai/transformer-debugger)
+- [BauKit](https://github.com/davidbau/baukit)
+- [nnsight](https://github.com/ndif-team/nnsight)
+- [Graphpatch](https://github.com/evan-lloyd/graphpatch)
+
 
 
 ## Fairness

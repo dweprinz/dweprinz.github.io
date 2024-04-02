@@ -8,7 +8,7 @@ main:
   - title: MLOps
     url: /mlops/overview/
   - title: Responsible AI
-    url: /resources/responsible-ai/
+    url: /resources/responsible-ai/overview/
   - title: Tools
     url: /resources/tools/
 

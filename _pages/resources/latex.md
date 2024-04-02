@@ -1,7 +1,7 @@
 ---
 layout: single
 title: LaTeX
-permalink: /latex/
+permalink: /resources/latex/
 toc: true
 ---
 

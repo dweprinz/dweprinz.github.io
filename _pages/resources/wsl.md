@@ -1,7 +1,7 @@
 ---
 layout: single
 title: WSL
-permalink: /wsl/
+permalink: /resources/wsl/
 ---
 
 

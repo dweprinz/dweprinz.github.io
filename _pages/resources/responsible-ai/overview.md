@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Responsible AI
-permalink: /resources/responsible-ai/overview
+permalink: /resources/responsible-ai/overview/
 toc: true
 ---
 These are my own resources, which I find useful to keep here. Feel free to take a look at them!

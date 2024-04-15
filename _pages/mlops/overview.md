@@ -2,6 +2,7 @@
 layout: single
 title: MLOps
 permalink: mlops/overview/
+classes: wide
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"

@@ -2,6 +2,7 @@
 layout: single
 title: Adversarial Robustness
 permalink: /resources/responsible-ai/adversarial-robustness/
+classes: wide
 ---
 
 Cool sources:

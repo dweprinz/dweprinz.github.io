@@ -2,6 +2,7 @@
 layout: single
 title: AI in Education
 permalink: /resources/responsible-ai/responsible-ai-education/
+classes: wide
 toc: true
 ---
 

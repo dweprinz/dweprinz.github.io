@@ -2,6 +2,7 @@
 layout: single
 title: WSL
 permalink: /resources/wsl/
+classes: wide
 ---
 
 

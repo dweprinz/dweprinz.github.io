@@ -2,6 +2,7 @@
 layout: single
 title: LaTeX
 permalink: /resources/latex/
+classes: wide
 toc: true
 ---
 

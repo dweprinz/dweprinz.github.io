@@ -17,6 +17,10 @@ Used theme:
 https://github.com/mmistakes/minimal-mistakes
 https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
+Run development prototype:
+```
+bundle exec jekyll serve
+```
 To do:
 
 - [ ] Update README.md

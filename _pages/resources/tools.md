@@ -8,7 +8,7 @@ toc: true
 These are my own resources, which I find useful to keep here. Feel free to take a look at them!
 
 ## Tools
-- [LaTeX frequently used](latex.md)
+- [LaTeX frequently used](../../resources/latex/)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Markdown emoji list](https://gist.github.com/rxaviers/7360908)
-- [WSL frequently used](wsl.md)
+- [WSL frequently used](../../resources/wsl/)

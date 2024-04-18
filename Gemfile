@@ -9,3 +9,9 @@ source "https://rubygems.org"
 # Happy Jekylling!
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minimal-mistakes-jekyll"
+gem "webrick"
+gem "jemoji"
+gem 'jekyll-katex'
+gem 'jekyll-lunr-js-search'
+gem 'jekyll-remote-theme'
+gem 'jekyll-include-cache'

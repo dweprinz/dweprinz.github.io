@@ -8,11 +8,6 @@ toc_label: "Table of Contents"
 toc_icon: "cog"
 ---
 
-### 
-
-
-
-
 
 
 

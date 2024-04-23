@@ -1,0 +1,48 @@
+---
+layout: single
+title: MLOps Tooling
+permalink: mlops/tooling/
+classes: wide
+---
+| Category          | Tool/Library Name   | Data Sources | Feature Platforms | Experiment Tracking | Orchestration | Model Registry | Model Deployment | Vector DB | Model Monitoring | Industry Standard | Pricing | Compliance |
+|-------------------|---------------------|--------------|-------------------|---------------------|---------------|----------------|------------------|-----------|------------------|-------------------|---------|------------|
+| **Data**          |                     |              |                   |                     |               |                |                  |           |                  |                   |         |            |
+|                   | Snowflake           |      ✓       |        ✓         |                     |               |                |                  |           |                  | Yes               | Premium | GDPR, HIPAA |
+|                   | Databricks          |      ✓       |        ✓         |         ✓           |       ✓       |                |        ✓         |           |                  | Yes               | Premium | GDPR, HIPAA |
+|                   | MongoDB             |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Google BigQuery     |      ✓       |        ✓         |                     |               |                |                  |           |                  | Yes               | Premium | GDPR, HIPAA |
+|                   | MySQL               |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Amazon Redshift     |      ✓       |        ✓         |                     |               |                |                  |           |                  | Yes               | Premium | GDPR, HIPAA |
+|                   | PostgreSQL          |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Redis               |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | SingleStore         |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Premium | GDPR, HIPAA |
+|                   | Rockset             |      ✓       |                   |                     |               |                |                  |           |                  | No                | Premium | GDPR        |
+|                   | Apache Kafka        |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Elasticsearch       |      ✓       |                   |                     |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Weaviate            |              |        ✓         |                     |               |                |                  |     ✓     |                  | No                | Free, Premium | GDPR      |
+|                   | Chroma              |              |                   |                     |               |                |                  |     ✓     |                  | No                | Premium | GDPR        |
+|                   | Marqo               |              |                   |                     |               |                |                  |     ✓     |                  | No                | Free, Premium | GDPR      |
+|                   | Vespa               |              |        ✓         |                     |               |                |        ✓         |     ✓     |                  | No                | Free, Premium | GDPR      |
+|                   | Drant               |      ✓       |                   |                     |               |                |                  |     ✓     |                  | No                | Free    | GDPR        |
+|                   | Milvus              |              |                   |                     |               |                |                  |     ✓     |                  | No                | Free, Premium | GDPR      |
+|                   | Pinecone            |              |                   |                     |               |                |                  |     ✓     |                  | No                | Premium | GDPR        |
+| **Models**        |                     |              |                   |                     |               |                |                  |           |                  |                   |         |            |
+|                   | Hex                 |              |                   |         ✓           |               |                |                  |           |                  | No                | Free, Premium | GDPR      |
+|                   | Weights & Biases    |              |                   |         ✓           |               |        ✓       |                  |           |        ✓         | Yes               | Premium | GDPR        |
+|                   | MLflow              |              |                   |         ✓           |               |        ✓       |                  |           |                  | Yes               | Free    | GDPR        |
+|                   | Neptune             |              |                   |         ✓           |               |        ✓       |                  |           |        ✓         | Yes               | Premium | GDPR        |
+|                   | Comet ML            |              |                   |         ✓           |               |                |                  |           |        ✓         | Yes               | Premium | GDPR        |
+|                   | ClearML             |              |                   |         ✓           |       ✓       |        ✓       |        ✓         |           |        ✓         | Yes               | Free, Premium | GDPR      |
+|                   | Hugging Face        |              |                   |                     |               |        ✓       |        ✓         |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Grafana + Prometheus|              |                   |                     |               |                |                  |           |        ✓         | Yes               | Free, Premium | GDPR      |
+|                   | Evidently AI        |              |                   |                     |               |                |                  |           |        ✓         | No                | Free, Premium | GDPR      |
+|                   | Censius             |              |                   |                     |               |                |                  |           |        ✓         | No                | Premium | GDPR        |
+| **Workflows**     |                     |              |                   |                     |               |                |                  |           |                  |                   |         |            |
+|                   | Apache Airflow      |              |                   |                     |       ✓       |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Prefect             |              |                   |                     |       ✓       |                |                  |           |                  | No                | Free, Premium | GDPR      |
+|                   | Metaflow            |              |                   |         ✓           |       ✓       |                |                  |           |                  | Yes                | Free    | GDPR        |
+|                   | Kubeflow            |              |                   |         ✓           |       ✓       |                |        ✓         |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Argo                |              |                   |                     |       ✓       |                |                  |           |                  | No                | Free    | GDPR        |
+|                   | GitHub              |              |                   |         ✓           |               |                |                  |           |                  | Yes               | Free, Premium | GDPR      |
+|                   | Docker              |              |                   |                     |               |                |        ✓         |           |                  | Yes               | Free, Premium | GDPR, HIPAA |
+|                   | Jupyter Notebook    |              |                   |         ✓           |               |                |                  |           |                  | Yes               | Free    | GDPR        |

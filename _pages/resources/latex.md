@@ -6,6 +6,9 @@ classes: wide
 toc: true
 ---
 
+## Project template
+[template.zip](../../_data/latex/latex_template.zip)
+
 ## Matrices and vectors
 [https://www.overleaf.com/learn/latex/Matrices](https://www.overleaf.com/learn/latex/Matrices)
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Conformal time series decomposition with component-wise exchangeability"
 date:   2024-06-24 22:21:59 +00:00
-image: /images/3dgaussian.jpg
+image: /images/conformal/pipeline_decomp.jpg
 categories: research
 author: "Derck Prinzhorn"
 authors: "<strong>Derck Prinzhorn</strong>, Thijmen Nijdam, Putri van der Linden, Alexander Timans"

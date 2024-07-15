@@ -56,6 +56,38 @@
           </tr>
         </table>
 
+        <!-- Scrollbar code adapted from https://github.com/kkhetarpal/kkhetarpal.github.io/blob/master/index.html#L200 -->
+        <!-- TODO: should be dynamically generated from markdown files -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <h2>Highlights / News</h2>
+            <div class="container sidebar col-md-3">
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- <h4 class="panel-title"></h4> -->
+              </div>
+              <div class="panel-body" id="oScroll" >
+              <div id="scroll">
+                <p>
+                  <strong>May 31, 2024</strong>: Accepted paper at <a href="https://jmlr.org/tmlr/">TMLR</a>
+              </p>
+              
+              <p>
+                  <strong>May 23, 2024</strong>: Accepted paper at <a href="https://copa-conference.com">COPA</a>, the 13th Symposium on Conformal and Probabilistic Prediction with Applications
+              </p>  
+              <!--  https://openreview.net/forum?id=ccDi5jtSF7  -->
+            <p>
+              <strong>November 23, 2023</strong>: Received <a href="https://www.amsterdamai.com/">AmsterdamAI</a> thesis award
+          </p>
+            </div>
+          </div>
+        </div>
+          </td>
+        </tr>
+      </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -66,6 +98,8 @@
             </td>
           </tr>
         </table>
+
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
@@ -76,18 +110,20 @@
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <h2>{{post.title}}</h2>
               <br>
               {{post.authors}}
 
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% if post.venue2 %}<em>{{post.venue2}}</em><br>{% endif %}
+              {% if post.award %}<span style="color: red;">{{post.award}}</span><br>{% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
@@ -98,11 +134,8 @@
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -112,9 +145,6 @@
           {% endfor %}
           {% endfor %}
         </table>
-        <br>
-        <br>
-        <br>
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">

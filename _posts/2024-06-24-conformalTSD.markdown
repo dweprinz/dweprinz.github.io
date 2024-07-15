@@ -6,7 +6,7 @@ image: /images/conformal/pipeline_decomp.jpg
 categories: research
 author: "Derck W. E. Prinzhorn"
 authors: "<strong>Derck W. E. Prinzhorn</strong>, Thijmen Nijdam, Putri A. van der Linden, Alexander Timans"
-venue: "arXiv"
+venue: "COPA"
 arxiv: https://arxiv.org/abs/2406.16766
 code: https://github.com/dweprinz/CP-TSD
 ---

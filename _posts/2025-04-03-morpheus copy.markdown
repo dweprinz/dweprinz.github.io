@@ -2,7 +2,7 @@
 layout: post
 title:  "Morpheus: Benchmarking Physical Reasoning of Video Generative Models with Real Physical Experiments"
 date:   2025-04-03 00:00:00 +00:00
-image: /images/morpheus/morpheus-thumbnail.png
+image: /images/morpheus.png
 categories: research
 author: "Derck W. E. Prinzhorn"
 authors: "Chenyu Zhang, Daniil Cherniavskii, Andrii Zadaianchuk, Antonios Tragoudaras, Antonios Vozikis, Thijmen Nijdam, <strong>Derck W. E. Prinzhorn</strong>, Mark Bodracska, Nicu Sebe, Efstratios Gavves"

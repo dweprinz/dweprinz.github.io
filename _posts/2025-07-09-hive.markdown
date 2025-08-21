@@ -2,7 +2,7 @@
 layout: post
 title:  "HIVE: A Hyperbolic Interactive Visualization Explorer for Representation Learning"
 date:   2025-07-09 00:00:00 +00:00
-image: /images/hive/hive-thumbnail.png
+image: /images/hive.png
 categories: research
 author: "Derck W. E. Prinzhorn"
 authors: "Thijmen Nijdam, <strong>Derck W. E. Prinzhorn</strong>, Jurgen de Heus, Thomas Brouwer"

@@ -1,0 +1,513 @@
+/* ===================================
+   CIVIO-INSPIRED DESIGN (Light only)
+   =================================== */
+
+:root {
+  --green: #1f4c34;
+  --green-light: #2a5f43;
+  --cream: #f9f7eb;
+  --cream-dark: #f0ede0;
+  --white: #ffffff;
+  --text-dark: #1f4c34;
+  --text-muted: #5a7d6a;
+  --link: #0066cc;
+
+  --font: 'DM Sans', 'Inter', -apple-system, sans-serif;
+  --container: 900px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s, border 0.3s;
+}
+
+.nav.scrolled {
+  background: var(--cream);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.nav-logo {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.nav.scrolled .nav-logo {
+  color: var(--text-dark);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.8);
+}
+
+.nav.scrolled .nav-link {
+  color: var(--text-muted);
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+}
+
+.nav.scrolled .mobile-menu-toggle span {
+  background: var(--text-dark);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: var(--cream);
+  padding: 20px 40px;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 99;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .mobile-menu-toggle { display: flex; }
+  .nav { padding: 16px 24px; }
+}
+
+/* ===================================
+   HERO
+   =================================== */
+
+.hero {
+  min-height: 100vh;
+  background: var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px 60px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 48px;
+  letter-spacing: -0.02em;
+}
+
+.hero-image {
+  width: 260px;
+  height: 380px;
+  border-radius: 0;
+  object-fit: cover;
+  margin-bottom: 48px;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+/* ===================================
+   SECTIONS
+   =================================== */
+
+.section {
+  padding: 50px 40px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--green);
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 28px;
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--green);
+  margin-bottom: 32px;
+}
+
+/* ===================================
+   ABOUT
+   =================================== */
+
+.about-content {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.about-btn {
+  font-size: 14px;
+  color: var(--text-dark);
+  padding: 8px 16px;
+  border: 1px solid var(--cream-dark);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.about-btn:hover {
+  border-color: var(--text-muted);
+  text-decoration: none;
+}
+
+.about-btn.primary {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+}
+
+.about-btn.primary:hover {
+  background: var(--green-light);
+}
+
+/* ===================================
+   NEWS (detailed)
+   =================================== */
+
+.news-full {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-entry {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.news-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.news-entry .news-date {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.news-entry p {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ===================================
+   EXPERIENCE TIMELINE
+   =================================== */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.timeline-meta {
+  font-size: 16px;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.timeline-desc {
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ===================================
+   PUBLICATIONS
+   =================================== */
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pub-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: var(--white);
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.pub-card:hover {
+  transform: translateY(-2px);
+}
+
+.pub-image {
+  width: 160px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--cream-dark);
+}
+
+.pub-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pub-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-venue {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--link);
+  margin-bottom: 6px;
+}
+
+.pub-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.pub-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.pub-btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 6px 14px;
+  border: 1px solid var(--cream-dark);
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.pub-btn:hover {
+  border-color: var(--text-dark);
+  text-decoration: none;
+}
+
+.coming-soon {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .pub-card {
+    flex-direction: column;
+  }
+
+  .pub-image {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid var(--cream-dark);
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 24px 60px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 290px;
+  }
+
+  .section {
+    padding: 40px 24px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

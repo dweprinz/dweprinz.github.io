@@ -280,34 +280,94 @@ img {
    NEWS (detailed)
    =================================== */
 
-.news-full {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.news-timeline {
+  position: relative;
+  padding-left: 32px;
 }
 
-.news-entry {
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--cream-dark);
+.news-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--cream-dark);
 }
 
-.news-entry:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+.news-year-group {
+  margin-bottom: 8px;
 }
 
-.news-entry .news-date {
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-bottom: 6px;
+.news-year-group:last-child {
+  margin-bottom: 0;
 }
 
-.news-entry p {
+.news-year-label {
+  position: relative;
   font-size: 15px;
+  font-weight: 700;
+  color: var(--green);
+  padding: 8px 0 4px;
+  letter-spacing: 0.02em;
+}
+
+.news-year-group:first-child .news-year-label {
+  padding-top: 0;
+}
+
+
+.news-timeline-item {
+  position: relative;
+  padding: 6px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.news-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cream-dark);
+  border: 1.5px solid var(--text-muted);
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.news-timeline-item.visible::before {
+  background: var(--green-light);
+  border-color: var(--green);
+}
+
+.news-timeline-item.reveal {
+  transition-delay: var(--delay, 0s);
+}
+
+.news-timeline-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 28px;
+  flex-shrink: 0;
+}
+
+.news-timeline-item p {
+  font-size: 14px;
   color: var(--text-dark);
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+.news-timeline-item p a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.news-timeline-item p a:hover {
+  text-decoration: underline;
 }
 
 /* ===================================
@@ -585,6 +645,18 @@ img {
 
   .section-title {
     font-size: 26px;
+  }
+
+  .news-timeline {
+    padding-left: 24px;
+  }
+
+  .news-timeline-item::before {
+    left: -20px;
+  }
+
+  .news-timeline::before {
+    left: 5px;
   }
 }
 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIVE - Derck Prinzhorn</title>
+
+  <meta name="description" content="HIVE: an interactive dashboard for exploring and interpreting hyperbolic embeddings with multiple projection methods.">
+  <meta name="author" content="Derck Prinzhorn">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="icon" href="../favicon.ico">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">Derck Prinzhorn</a>
+    <div class="nav-links">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#experience" class="nav-link">Experience</a>
+      <a href="../index.html#publications" class="nav-link">Publications</a>
+      <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#news" class="nav-link">News</a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../index.html#projects">Projects</a>
+  </div>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1 class="project-detail-title">HIVE: A Hyperbolic Interactive Visualization Explorer</h1>
+      <p class="project-authors">Thijmen Nijdam*, Derck Prinzhorn*, Jurgen de Heus*, Thomas Brouwer* (* equal contribution)</p>
+      <div class="project-header-links">
+        <a href="https://openreview.net/pdf?id=D9LlujFg7d" class="pub-btn">Paper</a>
+        <a href="https://github.com/thijmennijdam/HIVE" class="pub-btn">Code</a>
+      </div>
+    </header>
+
+    <figure class="project-hero-image reveal">
+      <img src="../images/publications/hive.png" alt="HIVE dashboard showing Poincare disk visualization">
+    </figure>
+
+    <section class="project-section reveal">
+      <h2>Summary</h2>
+      <p>HIVE is an interactive, open-source dashboard for exploring hyperbolic embeddings. These are vector representations that live in curved space rather than flat (Euclidean) space. Hyperbolic geometry is especially well-suited for data with natural hierarchies (like taxonomies or organizational trees), because the amount of space grows exponentially with distance from the center, much like a tree's branches.</p>
+      <p>Existing visualization tools assume flat geometry and distort hyperbolic structure. HIVE solves this by projecting embeddings into 2D using two curvature-aware methods (HoroPCA and CO-SNE), rendering them in the Poincare disk (a circular map of hyperbolic space), and offering four purpose-built interaction modes. A user study with five domain experts confirmed the tool's effectiveness, scoring 4.7 out of 5 overall.</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Key Contributions</h2>
+      <ul>
+        <li><strong>First interactive tool for hyperbolic embeddings.</strong> Existing embedding viewers assume flat (Euclidean) geometry; HIVE is the first to combine hyperbolic-aware projection with rich interactive exploration of both image and text data.</li>
+        <li><strong>Four purpose-built interaction modes:</strong> Compare (inspect selected embeddings side-by-side), Neighbors (find the k most similar points using different distance metrics), Tree (explore hierarchical parent-child relationships), and Traverse (interpolate along the shortest path between two points in hyperbolic space, seeing what data lies in between).</li>
+        <li><strong>Dual-view mode:</strong> display two different projection methods (HoroPCA and CO-SNE) side-by-side with linked highlighting, making it easy to see how each method reveals different aspects of the data's structure.</li>
+        <li><strong>Open-source and modular:</strong> supports custom datasets and models, with a prescribed directory structure for easy integration.</li>
+      </ul>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Method</h2>
+      <p>HIVE works with two mathematical models of hyperbolic space: the <strong>Poincare ball</strong> (a disk where distances grow rapidly toward the edge, useful for visualization) and the <strong>Lorentz model</strong> (a hyperboloid surface, better for computation). The system converts between them as needed.</p>
+      <p>To reduce high-dimensional embeddings to 2D for display, HIVE uses two methods. <strong>HoroPCA</strong> is a hyperbolic version of PCA (principal component analysis) that projects data onto horospheres, special curved surfaces that preserve the geometry of hyperbolic space. <strong>CO-SNE</strong> adapts the popular t-SNE algorithm by replacing Euclidean distances with hyperbolic distances, so neighborhood relationships are faithfully preserved.</p>
+      <p>The four interaction modes serve complementary purposes. <strong>Compare</strong> lets users select up to 5 points for side-by-side inspection. <strong>Neighbors</strong> finds the k most similar points, with a choice of distance metrics. <strong>Tree</strong> visualizes hierarchical parent-child relationships in the data's semantic taxonomy. <strong>Traverse</strong> picks two points and interpolates along the geodesic (shortest path in curved space) between them, revealing what data samples lie along the way.</p>
+      <p>We evaluated HIVE on the GRIT and ImageNet-1K datasets encoded with HyCoCLIP (a hyperbolic vision-language model), combining free-form exploration sessions with structured Likert-scale surveys across 5 expert users.</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Results</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Evaluation Aspect</th>
+            <th>Mean Score (out of 5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Usefulness</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <td>Quality of Visualization</td>
+            <td>4.8</td>
+          </tr>
+          <tr>
+            <td>User Experience</td>
+            <td>4.7</td>
+          </tr>
+          <tr class="highlight">
+            <td>Overall Average</td>
+            <td><strong>4.7</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Key qualitative findings from the expert study: CO-SNE produces more coherent local clusters than HoroPCA. Text embeddings cluster near the center of the Poincare disk while image embeddings sit near the boundary. In hyperbolic space, the center represents general concepts and the edges represent specific ones, confirming that text descriptions are more general than individual images. Tree mode validated known semantic hierarchies and revealed unexpected non-hierarchical patterns. Traversal mode helped identify semantic inconsistencies between nearby points, serving as a diagnostic tool.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Derck Prinzhorn</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

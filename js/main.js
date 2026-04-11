@@ -52,14 +52,24 @@
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // Nav background on scroll
+  // Project card click-through
+  document.querySelectorAll('.project-card[data-href]').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      window.location.href = card.dataset.href;
+    });
+  });
+
+  // Nav background on scroll (only toggle on pages with a hero section)
   const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  }, { passive: true });
+  if (nav && document.querySelector('.hero')) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
 
 })();

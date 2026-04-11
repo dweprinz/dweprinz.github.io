@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiotherapy Dose Prediction - Derck Prinzhorn</title>
+
+  <meta name="description" content="Physics-informed deep learning using UNETR with autoregressive RNN decoding for 3D head and neck cancer radiotherapy dose prediction.">
+  <meta name="author" content="Derck Prinzhorn">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="icon" href="../favicon.ico">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">Derck Prinzhorn</a>
+    <div class="nav-links">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#experience" class="nav-link">Experience</a>
+      <a href="../index.html#publications" class="nav-link">Publications</a>
+      <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#news" class="nav-link">News</a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../index.html#projects">Projects</a>
+  </div>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+
+    <header class="project-header reveal">
+
+      <h1 class="project-detail-title">Transformer-Based Radiotherapy Dose Prediction</h1>
+      <p class="project-authors">Gijs de Jong, Jakob Kaiser, Macha Meijer, Thijmen Nijdam, Derck Prinzhorn</p>
+      <div class="project-header-links">
+        <a href="https://github.com/oxkitsune/DL2" class="pub-btn">Code</a>
+      </div>
+    </header>
+
+    <figure class="project-hero-image reveal">
+      <img src="../images/publications/radiotherapy-architecture.png" alt="UNETR architecture for radiotherapy dose prediction">
+    </figure>
+
+    <section class="project-section reveal">
+      <h2>Summary</h2>
+      <p>In radiotherapy, clinicians need to plan exactly how much radiation to deliver to a tumor while minimizing damage to surrounding healthy organs. This planning is time-consuming and requires deep expertise. This project uses deep learning to predict optimal radiation dose distributions for head and neck cancer patients.</p>
+      <p>We attempted to reproduce a recent transformer-based approach (TrDosePred), but found the original paper lacked sufficient implementation details. Instead, we built on UNETR, a hybrid architecture combining a Vision Transformer (which captures global context in 3D scans) with a U-Net decoder (which produces fine-grained spatial predictions). We then extended it with physics-informed training objectives and a novel sequential prediction strategy that significantly improved results.</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Key Contributions</h2>
+      <ul>
+        <li><strong>Reproduction study</strong> documenting the real-world challenges of reproducing ML papers that omit key implementation details.</li>
+        <li><strong>Physics-informed training objectives.</strong> Instead of only minimizing pixel-level error, we added two clinically motivated losses: a DVH loss that penalizes deviations from ideal dose-volume histograms (the charts clinicians use to evaluate treatment plans), and a Moment loss that matches the statistical properties of dose distributions within each organ.</li>
+        <li><strong>Sequential slice prediction with RNN.</strong> Rather than predicting the entire 3D dose volume at once, a recurrent neural network predicts one slice at a time while remembering context from previous slices. This was the key improvement, and unlike input masking (which re-runs the model per slice and was 10-20x slower), the RNN added no computational overhead.</li>
+      </ul>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Method</h2>
+      <p>The model takes as input a 3D CT scan of a patient's head and neck (128&times;128&times;128 voxels), along with masks indicating where the tumor and critical organs are located. It outputs a predicted radiation dose for every point in the volume. We used data from the OpenKBP Challenge, which includes scans from 340 patients.</p>
+      <p>The architecture is <strong>UNETR</strong>: a Vision Transformer processes the full 3D scan to capture long-range spatial relationships (e.g., how the tumor's position relates to distant organs), while a U-Net-style decoder generates the detailed voxel-by-voxel dose prediction. We tested 9-block and 12-block encoder variants.</p>
+      <p>On top of the standard pixel-wise error (MAE), we explored two physics-informed losses. <strong>DVH loss</strong> directly optimizes the dose-volume histograms that clinicians review when evaluating plans. <strong>Moment loss</strong> ensures the predicted dose has the right statistical shape within each organ structure.</p>
+      <p>For sequential prediction, we compared three strategies. The winning approach uses a <strong>convolutional RNN</strong> that processes the 3D volume slice-by-slice, building up a running memory of what it has predicted so far, similar to how a human might plan treatment one cross-section at a time.</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Results</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Configuration</th>
+            <th>DVH Score &#8595;</th>
+            <th>Dose Score &#8595;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TrDosePred (original paper)</td>
+            <td><strong>2.512</strong></td>
+            <td><strong>1.658</strong></td>
+          </tr>
+          <tr>
+            <td>UNETR 9-block (MAE baseline)</td>
+            <td>4.252</td>
+            <td>5.587</td>
+          </tr>
+          <tr>
+            <td>UNETR 12-block</td>
+            <td>4.081</td>
+            <td>6.405</td>
+          </tr>
+          <tr>
+            <td>MAE + DVH loss</td>
+            <td>4.777</td>
+            <td>5.730</td>
+          </tr>
+          <tr>
+            <td>MAE + Moment loss</td>
+            <td>4.233</td>
+            <td>5.706</td>
+          </tr>
+          <tr class="highlight">
+            <td>MAE + RNN autoregression</td>
+            <td><strong>3.811</strong></td>
+            <td><strong>4.927</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Both scores measure prediction error (lower is better). DVH Score reflects clinical plan quality; Dose Score measures voxel-level accuracy. The RNN-based sequential decoder improved both metrics ~10% over the baseline with no additional computational cost. Physics-based losses alone gave marginal improvement, likely needing more tuning. While the original TrDosePred results could not be reproduced, the UNETR + RNN extension narrows the gap substantially.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Derck Prinzhorn</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

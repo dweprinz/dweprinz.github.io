@@ -1,0 +1,182 @@
+/* ===================================
+   PROJECT DETAIL PAGES
+   =================================== */
+
+.project-detail {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 100px 40px 60px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+/* --- Header --- */
+
+.project-header {
+  margin-bottom: 32px;
+}
+
+.project-venue {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--link);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.project-detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.project-authors {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.project-header-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* --- Hero image --- */
+
+.project-hero-image {
+  margin-bottom: 36px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  padding: 24px;
+}
+
+.project-hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* --- Content sections --- */
+
+.project-section {
+  margin-bottom: 32px;
+}
+
+.project-section h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.project-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.project-section p:last-child {
+  margin-bottom: 0;
+}
+
+.project-section ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.project-section li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.project-section li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Results table --- */
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.results-table th,
+.results-table td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.results-table th {
+  font-weight: 600;
+  color: var(--green);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.results-table td {
+  color: var(--text-dark);
+}
+
+.results-table tbody tr:hover {
+  background: var(--cream-dark);
+}
+
+.results-table .highlight {
+  font-weight: 600;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 80px 24px 40px;
+  }
+
+  .project-detail-title {
+    font-size: 26px;
+  }
+
+  .project-hero-image {
+    padding: 16px;
+  }
+
+  .project-hero-image img {
+    max-height: 280px;
+  }
+
+  .results-table {
+    font-size: 13px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 6px 8px;
+  }
+}

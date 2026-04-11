@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERF Robotics Hackathon - Derck Prinzhorn</title>
+
+  <meta name="description" content="Autonomous robot navigation using ROS, SLAM, and multi-robot communication at the European Robotics Forum 2022 Hackathon.">
+  <meta name="author" content="Derck Prinzhorn">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="icon" href="../favicon.ico">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">Derck Prinzhorn</a>
+    <div class="nav-links">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#experience" class="nav-link">Experience</a>
+      <a href="../index.html#publications" class="nav-link">Publications</a>
+      <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#news" class="nav-link">News</a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../index.html#projects">Projects</a>
+  </div>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1 class="project-detail-title">ERF Robotics Hackathon: Autonomous Robot Navigation</h1>
+      <p class="project-authors">F. Barkhof, S. van den Bent, O. Bosgraaf, S. Gunneweg, J. de Heus, T. Nijdam, D. Prinzhorn, J. Sprott</p>
+    </header>
+
+    <figure class="project-hero-image reveal">
+      <img src="../images/projects/erf-robotics.jpg" alt="ERF Robotics Hackathon barn arena with Lely Juno robots">
+    </figure>
+
+    <section class="project-section reveal">
+      <h2>Summary</h2>
+      <p>At the European Robotics Forum 2022 "Battle of Institutions" Hackathon in Rotterdam, our UvA team programmed two Lely Juno robots to autonomously navigate a simulated barn environment. The Lely Juno is an automatic feeding robot designed to push back hay to cows in real barns.</p>
+      <p>The challenge consisted of 9 scored tasks including wall following, narrow passage coordination between two robots, obstacle avoidance, homing to a base station, and proximity-based light activation. We competed against 7 other European university teams on challenges from Lely, Franka Emika, and Robo House.</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Implementation</h2>
+      <ul>
+        <li><strong>Dual navigation strategies.</strong> One Juno used a behaviour-based wall-following algorithm with three sonar distance sensors, switching actions based on right-wall and front distances. The other used a model-based approach with a LiDAR scanner for SLAM (Simultaneous Localization and Mapping), creating a cognitive map and following waypoints via a finite state machine.</li>
+        <li><strong>Multi-robot communication.</strong> A ROS master-client architecture where robots coordinated passage through narrow corridors using boolean messages. The master Juno had priority; the client would stop and back up when the master was in the passage.</li>
+        <li><strong>Color-based homing.</strong> A blob detection algorithm using an external webcam to locate the home base (an orange traffic cone). The center of the detected blob determined left/right steering adjustments. At the ERF, the detection color was switched to green to avoid confusion with the many red objects in Lely's arena.</li>
+        <li><strong>Vicinity lights.</strong> Blob detection was reused to estimate inter-robot distance. When one Juno detected the other's color within range, IoT-connected Shelly Plug-S smart plugs were triggered via MQTT to turn on lights.</li>
+        <li><strong>Developer monitoring.</strong> ROSboard provided a real-time web dashboard showing LiDAR scans, costmaps, sensor readings, and robot state.</li>
+      </ul>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Challenges</h2>
+      <p>The LiDAR could not be center-mounted on the Juno due to its physical design, limiting the scan to less than 360 degrees and degrading the SLAM map quality. This forced a switch from model-based to behaviour-based navigation for one robot. The second Juno lacked sonar sensor mounts entirely, so it navigated purely via camera-based blob following. These hardware constraints required significant adaptation of our pre-tested TurtleBot3 solutions during the hackathon itself.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Derck Prinzhorn</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -60,6 +60,8 @@
     });
   });
 
+
+
   // Nav background on scroll (only toggle on pages with a hero section)
   const nav = document.getElementById('nav');
   if (nav && document.querySelector('.hero')) {

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dutch Nao Team - Derck Prinzhorn</title>
+
+  <meta name="description" content="Dutch Nao Team: building the Yggdrasil framework in Rust for autonomous robot football in the RoboCup Standard Platform League.">
+  <meta name="author" content="Derck Prinzhorn">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="icon" href="../favicon.ico">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">Derck Prinzhorn</a>
+    <div class="nav-links">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#experience" class="nav-link">Experience</a>
+      <a href="../index.html#publications" class="nav-link">Publications</a>
+      <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#news" class="nav-link">News</a>
+    </div>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#experience">Experience</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../index.html#projects">Projects</a>
+  </div>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">&larr; Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1 class="project-detail-title">Dutch Nao Team: RoboCup Standard Platform League</h1>
+      <p class="project-authors">G. de Jong, H. Ruiter, D. Prinzhorn, J. Kaiser, M. Honkoop, J. Weerheim, F. Klein Gunnewiek, R. Geurts, D. Catarrinho, S. Visser, D. Werkhoven, R. van der Veen, M. Bernardy</p>
+    </header>
+
+    <figure class="project-hero-image reveal">
+      <img src="../images/projects/dutch-nao-team.jpg" alt="NAO robots lined up at the sideline of a RoboCup football field">
+    </figure>
+
+    <section class="project-section reveal">
+      <h2>Summary</h2>
+      <p>The Dutch Nao Team is UvA's entry in the RoboCup Standard Platform League, where teams compete with identical NAO humanoid robots to play football fully autonomously. My primary role was as an ML engineer, working on AI features like pose classification, ball detection, whistle detection, and jersey detection. I also served as project manager and vice chair, handling team vision, project planning, and leading the writing of the technical report.</p>
+      <p>The major effort in 2022-2023 was building <strong>Yggdrasil</strong>, an entirely new robot framework written in Rust. Designed for continuity, extensibility, and developer experience, the goal was to provide the SPL community with a modern, low-barrier-to-entry framework. The team competed at GORE 2023 (6th place) and RoboCup 2023 in Bordeaux (4th place in the Challenge Shield, 1st place in the data minimisation challenge).</p>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Yggdrasil Framework</h2>
+      <ul>
+        <li><strong>Tyr: Dependency injection and parallel execution.</strong> A system-based architecture where robot subsystems are defined as functions over shared resources. Systems run once per LoLA cycle, with automatic scheduling via a directed acyclic graph that enables future parallelisation.</li>
+        <li><strong>Nidhogg: Abstraction layer.</strong> Built on top of Aldebaran's LoLA software, providing intuitive data structures for robot control. Supports multiple backends (LoLA, MuJoCo, Bullet) so the framework can run seamlessly in simulation.</li>
+        <li><strong>Bifrost: Networking.</strong> A packet encoding/decoding library based on protocol buffers with Rust derive macros. Variable-length integer encoding helped win 1st place in the data minimisation challenge (3.35 bytes per robot-second).</li>
+        <li><strong>Heimdall: Camera library.</strong> V4L-based camera interface for the NAO's dual HD cameras, working directly with YUYV images for performance.</li>
+        <li><strong>Sindri: Build tool.</strong> A CLI for building, deploying, and scanning robots with single commands.</li>
+        <li><strong>Mimir: Debug panel.</strong> A web-based panel (built with Dioxus) for real-time visualisation of walking engine parameters, camera feeds, and vision algorithm overlays via WebAssembly.</li>
+      </ul>
+    </section>
+
+    <section class="project-section reveal">
+      <h2>Competition Results</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GORE 2023 (German Open Replacement Event)</td>
+            <td>6th place</td>
+          </tr>
+          <tr>
+            <td>RoboCup 2023 Bordeaux &mdash; Challenge Shield</td>
+            <td>4th place</td>
+          </tr>
+          <tr class="highlight">
+            <td>RoboCup 2023 Bordeaux &mdash; Data Minimisation Challenge</td>
+            <td><strong>1st place</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Derck Prinzhorn</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

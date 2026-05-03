@@ -7,7 +7,7 @@ links:
   paper: pdfs/projects/visual-concept-fusion-report.pdf
   poster: pdfs/projects/visual-concept-fusion-poster.pdf
   code: https://github.com/thijmennijdam/stable-diffusion-v2
-image: images/publications/image-guidance.png
+image: images/publications/image-guidance.webp
 ---
 
 ## Summary

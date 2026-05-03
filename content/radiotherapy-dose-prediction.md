@@ -4,7 +4,7 @@ venue: UvA Deep Learning 2, 2024
 authors: Gijs de Jong, Jakob Kaiser, Macha Meijer, Thijmen Nijdam, Derck Prinzhorn
 links:
   code: https://github.com/oxkitsune/DL2
-image: images/publications/radiotherapy-architecture.png
+image: images/publications/radiotherapy-architecture.webp
 ---
 
 ## Summary

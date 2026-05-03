@@ -5,7 +5,7 @@ authors: Thijmen Nijdam*, Derck Prinzhorn*, Jurgen de Heus*, Thomas Brouwer* (* 
 links:
   paper: https://openreview.net/pdf?id=D9LlujFg7d
   code: https://github.com/thijmennijdam/HIVE
-image: images/publications/hive.png
+image: images/publications/hive.webp
 ---
 
 ## Summary

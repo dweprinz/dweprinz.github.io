@@ -526,6 +526,11 @@ img {
   object-fit: cover;
 }
 
+.pub-image-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .pub-content {
   flex: 1;
   display: flex;

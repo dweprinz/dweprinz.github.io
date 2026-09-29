@@ -366,7 +366,7 @@ img {
 }
 
 .news-timeline-item p a {
-  color: var(--link);
+  color: inherit;
   text-decoration: none;
 }
 

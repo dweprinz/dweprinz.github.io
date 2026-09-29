@@ -531,6 +531,44 @@ img {
   background: #fff;
 }
 
+.pub-wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  color: var(--white);
+  text-align: center;
+}
+
+.pub-wordmark::before {
+  content: '';
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.pub-wordmark span {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pub-wordmark-trace {
+  position: relative;
+  background: linear-gradient(135deg, #183c2b 0%, #347052 100%);
+}
+
+.pub-wordmark-evasion {
+  position: relative;
+  background: linear-gradient(135deg, #244657 0%, #2f7180 100%);
+}
+
 .pub-content {
   flex: 1;
   display: flex;

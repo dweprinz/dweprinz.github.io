@@ -383,7 +383,7 @@ img {
 
 #experience .timeline-item {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 0 24px;
   align-items: first baseline;
   padding: 14px 0;

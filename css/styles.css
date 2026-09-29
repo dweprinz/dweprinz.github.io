@@ -245,6 +245,10 @@ img {
   margin-bottom: 0;
 }
 
+.about-content a {
+  color: inherit;
+}
+
 .about-links {
   display: flex;
   gap: 10px;

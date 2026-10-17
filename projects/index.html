@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Projects - Derck Prinzhorn</title>
+  <title>Projects &amp; Hackathons - Derck Prinzhorn</title>
 
-  <meta name="description" content="All projects by Derck Prinzhorn — AI safety, deep learning, robotics, and more.">
+  <meta name="description" content="A project journal by Derck Prinzhorn: AI control, image generation, robot football, and hackathons.">
   <meta name="author" content="Derck Prinzhorn">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/styles.css?v=20260929-2">
+  <link rel="stylesheet" href="../css/styles.css?v=20261017-project-journal">
   <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="stylesheet" href="../css/project-journal.css?v=20261017">
   <link rel="icon" href="../favicon.ico">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
@@ -31,8 +32,8 @@
       <a href="../index.html#about" class="nav-link">About</a>
       <a href="../index.html#experience" class="nav-link">Experience</a>
       <a href="../index.html#publications" class="nav-link">Publications</a>
-      <a href="../index.html#news" class="nav-link">News</a>
       <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#news" class="nav-link">News</a>
     </div>
     <button class="mobile-menu-toggle" id="mobile-menu-toggle">
       <span></span>
@@ -45,108 +46,122 @@
     <a href="../index.html#about">About</a>
     <a href="../index.html#experience">Experience</a>
     <a href="../index.html#publications">Publications</a>
-    <a href="../index.html#news">News</a>
     <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#news">News</a>
   </div>
 
-  <main class="project-detail">
+  <main class="project-detail project-journal">
     <a href="../index.html#projects" class="back-link">&larr; Back to home</a>
 
-    <header class="project-header reveal">
-      <h1 class="project-detail-title">All Projects</h1>
+    <header class="journal-intro">
+      <h1 class="project-detail-title">Projects &amp; Hackathons</h1>
+      <p>A project journal, from university teams to hackathon weekends. Things we built, tried, and learned along the way.</p>
     </header>
 
-    <div class="projects-grid" style="margin-top: 2rem;">
-      <article class="project-card reveal" data-href="ai-control.html">
-        <div class="project-card-image">
-          <img src="../images/projects/ai-control-hackathon.webp" alt="AI Control Evaluation Structure" decoding="async">
+    <article class="journal-entry journal-control" aria-labelledby="control-title">
+      <p class="journal-date"><time datetime="2026">2026</time></p>
+      <header>
+        <p class="journal-context">Apart Research AI Control Hackathon</p>
+        <h2 id="control-title"><a href="ai-control.html">Controlling the Researcher</a></h2>
+      </header>
+      <div class="control-layout">
+        <figure class="journal-diagram">
+          <a href="ai-control.html" aria-label="Read about Controlling the Researcher">
+            <img src="../images/projects/ai-control-hackathon.webp" alt="Evaluation setup: an agent produces a research artifact, which static and agentic monitors inspect" decoding="async">
+          </a>
+          <figcaption>The evaluation setup we built for the hackathon.</figcaption>
+        </figure>
+        <div class="journal-copy control-note">
+          <p>Could a monitor catch an AI agent sabotaging machine learning research?</p>
+          <p>We built evaluations spanning model training and CUDA kernel optimisation to explore that question.</p>
+          <a href="ai-control.html" class="journal-link">Read the project &rarr;</a>
         </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Mar 2026</p>
-          <h3 class="project-title">Controlling the Researcher: AI Control Evaluations for Automated AI R&D</h3>
-          <p class="project-desc">Control evaluations for AI agents doing ML research. Subtle sabotage embedded in artifacts evades nearly all monitors, while obvious side tasks are reliably caught.</p>
-          <div class="project-links">
-            <a href="ai-control.html" class="pub-btn primary">Read more</a>
-          </div>
-        </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="project-card reveal" data-href="hive.html">
-        <div class="project-card-image">
-          <img src="../images/publications/hive.webp" alt="HIVE" decoding="async">
+    <article class="journal-entry journal-guidance" aria-labelledby="guidance-title">
+      <p class="journal-date"><time datetime="2025">2025</time></p>
+      <header>
+        <p class="journal-context">Master’s project at the University of Amsterdam</p>
+        <h2 id="guidance-title"><a href="visual-concept-fusion.html">Injecting Image Guidance</a></h2>
+      </header>
+      <div class="journal-copy guidance-copy">
+        <p>We explored how a reference image could guide Stable Diffusion alongside a text prompt, without retraining the diffusion model. Here’s one example from our paper.</p>
+      </div>
+      <!-- Original embedded images from the project report, page 10, Figure 7, first row. -->
+      <figure class="guidance-example">
+        <p class="guidance-prompt"><span>Prompt</span> “A beautiful portrait of a mysterious character”</p>
+        <div class="guidance-sequence">
+          <figure>
+            <img src="../images/projects/image-guidance-reference.png" alt="Abstract painting used as the visual reference" width="310" height="310" loading="lazy" decoding="async">
+            <figcaption>Reference image</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/projects/image-guidance-text-only.png" alt="Portrait generated by Stable Diffusion using only the text prompt" width="310" height="310" loading="lazy" decoding="async">
+            <figcaption>Text prompt only</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/projects/image-guidance-guided.png" alt="Portrait generated with our image guidance method, incorporating painterly texture and colour" width="310" height="310" loading="lazy" decoding="async">
+            <figcaption>With our image guidance</figcaption>
+          </figure>
         </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Oct 2025</p>
-          <h3 class="project-title">HIVE: Hyperbolic Visualization Explorer</h3>
-          <p class="project-desc">Interactive dashboard for exploring hyperbolic embeddings with curvature-aware projections and multiple interaction modes. Published at the Beyond Euclidean Workshop, ICCV 2025.</p>
-          <div class="project-links">
-            <a href="hive.html" class="pub-btn primary">Read more</a>
-          </div>
-        </div>
-      </article>
+        <figcaption class="example-source">Selected example from our paper. <a href="https://arxiv.org/abs/2605.25191">See the full comparison on arXiv.</a></figcaption>
+      </figure>
+      <a href="visual-concept-fusion.html" class="journal-link">Read the project &rarr;</a>
+    </article>
 
-      <article class="project-card reveal" data-href="visual-concept-fusion.html">
-        <div class="project-card-image">
-          <img src="../images/publications/image-guidance.webp" alt="Injecting Image Guidance" decoding="async">
+    <article class="journal-entry journal-nao" aria-labelledby="nao-title">
+      <p class="journal-date"><time datetime="2023">2023</time></p>
+      <header class="nao-heading">
+        <div>
+          <p class="journal-context">University of Amsterdam’s RoboCup team</p>
+          <h2 id="nao-title"><a href="dutch-nao-team.html">Dutch NAO Team</a></h2>
         </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Jul 2025</p>
-          <h3 class="project-title">Injecting Image Guidance into Diffusion Models</h3>
-          <p class="project-desc">Guide Stable Diffusion with both text and a reference image at inference time, without retraining. A lightweight aligner bridges the image-text embedding gap.</p>
-          <div class="project-links">
-            <a href="visual-concept-fusion.html" class="pub-btn primary">Read more</a>
-          </div>
+        <p class="nao-caption">Robot football, from perception to the pitch.</p>
+      </header>
+      <figure class="nao-photo">
+        <a href="dutch-nao-team.html" aria-label="Read about the Dutch NAO Team">
+          <img src="../images/projects/dutch-nao-team.webp" alt="The team's NAO robots lined up beside the RoboCup pitch" loading="lazy" decoding="async">
+        </a>
+      </figure>
+      <div class="nao-notes journal-copy">
+        <p>I worked on robot perception and served as project manager and vice chair.</p>
+        <div>
+          <p>Together we built Yggdrasil, a robot framework in Rust, and placed fourth in the RoboCup 2023 Challenge Shield.</p>
+          <p>The team now competes as <a href="https://whirlwind.team/">whIRLwind Amsterdam</a> and finished <a href="https://whirlwind.team/news/2026-08-26-world-humanoid-robot-games-third-place">third in the 5v5 Middle Division at the 2026 World Humanoid Robot Games</a> in Beijing.</p>
+          <a href="dutch-nao-team.html" class="journal-link">Read the project &rarr;</a>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="project-card reveal" data-href="radiotherapy-dose-prediction.html">
-        <div class="project-card-image">
-          <img src="../images/publications/radiotherapy-architecture.webp" alt="Radiotherapy Dose Prediction" decoding="async">
-        </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Sep 2024</p>
-          <h3 class="project-title">Transformer-Based Radiotherapy Dose Prediction</h3>
-          <p class="project-desc">Deep learning for radiotherapy dose prediction in head and neck cancer. Extended UNETR with physics-informed losses and a sequential RNN decoder (~10% improvement).</p>
-          <div class="project-links">
-            <a href="radiotherapy-dose-prediction.html" class="pub-btn primary">Read more</a>
+    <article class="journal-entry journal-erf" aria-labelledby="erf-title">
+      <p class="journal-date"><time datetime="2022">2022</time></p>
+      <div class="erf-layout">
+        <figure>
+          <a href="erf-robotics.html" aria-label="Read about the ERF Robotics Hackathon">
+            <img src="../images/projects/erf-robotics.webp" alt="Lely Juno robots in the simulated barn arena at the hackathon" loading="lazy" decoding="async">
+          </a>
+          <figcaption>The simulated barn at the European Robotics Forum.</figcaption>
+        </figure>
+        <div>
+          <header>
+            <p class="journal-context">European Robotics Forum Hackathon</p>
+            <h2 id="erf-title"><a href="erf-robotics.html">ERF Robotics Hackathon</a></h2>
+          </header>
+          <div class="journal-copy">
+            <p>We worked on autonomous navigation and communication between robots in a simulated barn.</p>
+            <p>The challenge was getting two Lely Juno robots to map their surroundings, avoid obstacles, and coordinate with each other.</p>
+            <a href="erf-robotics.html" class="journal-link">Read the project &rarr;</a>
           </div>
         </div>
-      </article>
-
-      <article class="project-card reveal" data-href="dutch-nao-team.html">
-        <div class="project-card-image">
-          <img src="../images/projects/dutch-nao-team.webp" alt="NAO robots at RoboCup" decoding="async">
-        </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Jul 2023</p>
-          <h3 class="project-title">Dutch Nao Team: RoboCup Standard Platform League</h3>
-          <p class="project-desc">ML engineer and project manager for UvA's robot football team. Built the Yggdrasil framework in Rust and placed 4th at RoboCup 2023.</p>
-          <div class="project-links">
-            <a href="dutch-nao-team.html" class="pub-btn primary">Read more</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card reveal" data-href="erf-robotics.html">
-        <div class="project-card-image">
-          <img src="../images/projects/erf-robotics.webp" alt="ERF Robotics Hackathon arena" decoding="async">
-        </div>
-        <div class="project-card-content">
-          <p class="pub-venue">Jun 2022</p>
-          <h3 class="project-title">ERF Robotics Hackathon: Autonomous Robot Navigation</h3>
-          <p class="project-desc">Autonomous navigation for Lely Juno robots using ROS, SLAM, multi-robot communication, and color-based homing in a simulated barn environment.</p>
-          <div class="project-links">
-            <a href="erf-robotics.html" class="pub-btn primary">Read more</a>
-          </div>
-        </div>
-      </article>
-    </div>
+      </div>
+    </article>
   </main>
 
   <footer class="footer">
     <p>&copy; 2026 Derck Prinzhorn</p>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=20261017-project-journal"></script>
 </body>
 </html>

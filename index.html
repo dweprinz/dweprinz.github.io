@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home at-top">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=20260929-2">
+  <link rel="stylesheet" href="css/styles.css?v=20261017-project-journal">
   <link rel="icon" href="favicon.ico">
   <link rel="preload" as="image" href="images/derck_tubingen.webp" type="image/webp">
 
@@ -31,8 +31,8 @@
       <a href="#about" class="nav-link">About</a>
       <a href="#experience" class="nav-link">Experience</a>
       <a href="#publications" class="nav-link">Publications</a>
-      <a href="#news" class="nav-link">News</a>
       <a href="#projects" class="nav-link">Projects</a>
+      <a href="#news" class="nav-link">News</a>
     </div>
     <button class="mobile-menu-toggle" id="mobile-menu-toggle">
       <span></span>
@@ -45,8 +45,8 @@
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#publications">Publications</a>
-    <a href="#news">News</a>
     <a href="#projects">Projects</a>
+    <a href="#news">News</a>
   </div>
 
   <main>
@@ -232,6 +232,89 @@
       </div>
     </section>
 
+    <section class="section" id="projects">
+      <header class="projects-intro">
+        <h2 class="section-header">Projects &amp; Hackathons</h2>
+      </header>
+
+      <div class="project-stories" id="project-carousel" role="region" aria-roledescription="carousel" aria-label="Projects and hackathons" tabindex="0">
+        <article class="project-story" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <div class="story-image">
+          <img src="images/projects/ai-control-hackathon.webp" alt="AI Control Evaluation Structure" decoding="async">
+          </div>
+          <div class="story-text">
+          <p class="story-year">2026</p>
+          <h3 class="story-title"><a href="projects/ai-control.html">Controlling the Researcher</a></h3>
+          <p class="project-context">Apart Research AI Control Hackathon</p>
+          <p class="story-description">We built evaluations to explore whether monitors could catch AI agents sabotaging machine learning research.</p>
+
+          </div>
+        </article>
+
+        <article class="project-story" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <div class="story-image story-comparison">
+            <p class="comparison-prompt">“A beautiful portrait of a mysterious character”</p>
+            <div class="comparison-images">
+              <figure>
+                <img src="images/projects/image-guidance-reference.png" alt="Abstract painting used as the reference image" width="310" height="310" decoding="async">
+                <figcaption>Reference</figcaption>
+              </figure>
+              <figure>
+                <img src="images/projects/image-guidance-text-only.png" alt="Portrait generated using only the text prompt" width="310" height="310" decoding="async">
+                <figcaption>Text only</figcaption>
+              </figure>
+              <figure>
+                <img src="images/projects/image-guidance-guided.png" alt="Portrait generated with our image guidance, incorporating painterly texture and colour" width="310" height="310" decoding="async">
+                <figcaption>With image guidance</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="story-text">
+          <p class="story-year">2025</p>
+          <h3 class="story-title"><a href="projects/visual-concept-fusion.html">Injecting Image Guidance</a></h3>
+          <p class="project-context">Master’s project at the University of Amsterdam</p>
+          <p class="story-description">We built a way to guide Stable Diffusion with a reference image and a text prompt, without retraining.</p>
+
+          </div>
+        </article>
+
+        <article class="project-story" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <div class="story-image story-photo">
+          <img src="images/projects/dutch-nao-team.webp" alt="NAO robots at RoboCup" decoding="async">
+          </div>
+          <div class="story-text">
+          <p class="story-year">2023</p>
+          <h3 class="story-title"><a href="projects/dutch-nao-team.html">Dutch NAO Team</a></h3>
+          <p class="project-context">University of Amsterdam’s RoboCup team, now <a href="https://whirlwind.team/">whIRLwind Amsterdam</a></p>
+          <p class="story-description">I worked on robot perception and helped lead the team as we built a new Rust framework and competed at RoboCup. We placed fourth in the 2023 Challenge Shield.</p>
+
+          </div>
+        </article>
+
+        <article class="project-story" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <div class="story-image story-photo">
+          <img src="images/projects/erf-robotics.webp" alt="ERF Robotics Hackathon arena" decoding="async">
+          </div>
+          <div class="story-text">
+          <p class="story-year">2022</p>
+          <h3 class="story-title"><a href="projects/erf-robotics.html">ERF Robotics Hackathon</a></h3>
+          <p class="project-context">European Robotics Forum Hackathon</p>
+          <p class="story-description">We worked on autonomous navigation and communication between robots in a simulated barn.</p>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="project-carousel-footer">
+        <a href="projects/" class="story-link">View all projects</a>
+        <div class="carousel-controls" hidden>
+          <span class="carousel-position" aria-live="polite" aria-atomic="true">02 / 04</span>
+          <button type="button" class="carousel-prev" aria-label="Previous project" aria-controls="project-carousel">&larr;</button>
+          <button type="button" class="carousel-next" aria-label="Next project" aria-controls="project-carousel">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="news">
       <h2 class="section-header">Highlights / News</h2>
       <div class="news-timeline">
@@ -301,75 +384,12 @@
         </div>
       </div>
     </section>
-
-    <section class="section" id="projects">
-      <h2 class="section-header">Projects</h2>
-
-      <div class="projects-grid">
-        <article class="project-card reveal" data-href="projects/ai-control.html">
-          <div class="project-card-image">
-            <img src="images/projects/ai-control-hackathon.webp" alt="AI Control Evaluation Structure" decoding="async">
-          </div>
-          <div class="project-card-content">
-            <p class="pub-venue">Mar 2026</p>
-            <h3 class="project-title">Controlling the Researcher: AI Control Evaluations for Automated AI R&D</h3>
-            <p class="project-desc">Control evaluations for AI agents doing ML research. Subtle sabotage embedded in artifacts evades nearly all monitors, while obvious side tasks are reliably caught.</p>
-            <div class="project-links">
-              <a href="projects/ai-control.html" class="pub-btn primary">Read more</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-href="projects/hive.html">
-          <div class="project-card-image">
-            <img src="images/publications/hive.webp" alt="HIVE" decoding="async">
-          </div>
-          <div class="project-card-content">
-            <p class="pub-venue">Oct 2025</p>
-            <h3 class="project-title">HIVE: Hyperbolic Visualization Explorer</h3>
-            <p class="project-desc">Interactive dashboard for exploring hyperbolic embeddings with curvature-aware projections and multiple interaction modes. Published at the Beyond Euclidean Workshop, ICCV 2025.</p>
-            <div class="project-links">
-              <a href="projects/hive.html" class="pub-btn primary">Read more</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-href="projects/visual-concept-fusion.html">
-          <div class="project-card-image">
-            <img src="images/publications/image-guidance.webp" alt="Injecting Image Guidance" decoding="async">
-          </div>
-          <div class="project-card-content">
-            <p class="pub-venue">Jul 2025</p>
-            <h3 class="project-title">Injecting Image Guidance into Diffusion Models</h3>
-            <p class="project-desc">Guide Stable Diffusion with both text and a reference image at inference time, without retraining. A lightweight aligner bridges the image-text embedding gap.</p>
-            <div class="project-links">
-              <a href="projects/visual-concept-fusion.html" class="pub-btn primary">Read more</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-href="projects/radiotherapy-dose-prediction.html">
-          <div class="project-card-image">
-            <img src="images/publications/radiotherapy-architecture.webp" alt="Radiotherapy Dose Prediction Architecture" decoding="async">
-          </div>
-          <div class="project-card-content">
-            <p class="pub-venue">Sep 2024</p>
-            <h3 class="project-title">Transformer-Based Radiotherapy Dose Prediction</h3>
-            <p class="project-desc">Deep learning for radiotherapy dose prediction in head and neck cancer. Extended UNETR with physics-informed losses and a sequential RNN decoder (~10% improvement).</p>
-            <div class="project-links">
-              <a href="projects/radiotherapy-dose-prediction.html" class="pub-btn primary">Read more</a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <a href="projects/" class="show-more-btn">View all projects</a>
-    </section>
   </main>
 
   <footer class="footer">
     <p>&copy; 2026 Derck Prinzhorn · Made with Claude Code</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261017-project-journal"></script>
 </body>
 </html>

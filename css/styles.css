@@ -859,7 +859,15 @@ img {
   padding-top: 18px;
   border-top: 1px solid var(--cream-dark);
 }
-.project-carousel-footer .story-link { text-underline-offset: 5px; }
+.project-carousel-footer .story-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 12px;
+  margin-left: -12px;
+  font-size: 15px;
+  text-underline-offset: 5px;
+}
 .carousel-controls { display: flex; align-items: center; gap: 8px; }
 .carousel-controls[hidden] { display: none; }
 .carousel-position { font-size: 12px; font-variant-numeric: tabular-nums; margin-right: 16px; }

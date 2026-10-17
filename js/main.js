@@ -136,8 +136,9 @@
     carousel.addEventListener('scrollend', settle);
     window.addEventListener('resize', updateControls);
     controls.hidden = false;
-    // Open on Image Guidance, the second project (after the leading loop copy).
-    if (looping) carousel.scrollTo({ left: positions()[2], behavior: 'instant' });
+    // Keep the chosen opening project when the chronological order changes.
+    const initialSlide = Math.max(0, slides.findIndex(slide => slide.hasAttribute('data-carousel-start')));
+    if (looping) carousel.scrollTo({ left: positions()[initialSlide + 1], behavior: 'instant' });
     updateControls();
   }
 

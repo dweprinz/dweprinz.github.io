@@ -66,10 +66,10 @@
 
     <section class="project-section reveal">
       <h2>Summary</h2>
+      <p>At the Apart Research AI Control Hackathon, we developed control evaluations for AI agents carrying out machine learning research. We focused on risks specific to AI R&D, extending evaluations beyond software engineering threats such as code backdoors and data exfiltration.</p>
+      <p>Our three control evaluation settings span the ML development pipeline: safety fine-tuning sabotage, RL post-training sabotage, and backdoors during CUDA kernel optimization. Each setting includes both non-orthogonal side tasks (sabotage embedded within the main artifact) and orthogonal side tasks (discreet out-of-scope actions alongside legitimate work).</p>
+      <p>In our evaluations, we found a sharp asymmetry: orthogonal side tasks are trivial to complete but leave anomalous traces that static monitors reliably detect, while non-orthogonal sabotage embedded in model weights, post-training pipelines, or kernel code evades almost all monitor configurations evaluated.</p>
       <p>This hackathon project later developed into <a href="https://research-arena.ai/">ResearchArena</a>.</p>
-      <p>As AI systems take on increasingly autonomous roles in machine learning research, it becomes critical to ask if their outputs can be trusted. Existing AI control evaluations focus on software engineering threats such as code backdoors and data exfiltration, leaving the distinctive risks of AI R&D itself unaddressed.</p>
-      <p>We introduce three control evaluation settings that together span the ML development pipeline: safety fine-tuning sabotage, RL post-training sabotage, and backdoors during CUDA kernel optimization. Each setting includes both non-orthogonal side tasks (sabotage embedded within the main artifact) and orthogonal side tasks (discreet out-of-scope actions alongside legitimate work).</p>
-      <p>Our results reveal a sharp asymmetry: orthogonal side tasks are trivial to complete but leave anomalous traces that static monitors reliably detect, while non-orthogonal sabotage embedded in model weights, post-training pipelines, or kernel code evades almost all monitor configurations evaluated.</p>
     </section>
 
     <section class="project-section reveal">

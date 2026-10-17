@@ -67,7 +67,7 @@
 
     <section class="project-section reveal">
       <h2>Summary</h2>
-      <p>In radiotherapy, clinicians need to plan exactly how much radiation to deliver to a tumor while minimizing damage to surrounding healthy organs. This planning is time-consuming and requires deep expertise. This project uses deep learning to predict optimal radiation dose distributions for head and neck cancer patients.</p>
+      <p>For a master’s project at the University of Amsterdam, we used deep learning to predict radiation dose distributions for head and neck cancer patients. In radiotherapy, clinicians need to plan exactly how much radiation to deliver to a tumor while minimizing damage to surrounding healthy organs. This planning is time-consuming and requires deep expertise.</p>
       <p>We attempted to reproduce a recent transformer-based approach (TrDosePred), but found the original paper lacked sufficient implementation details. Instead, we built on UNETR, a hybrid architecture combining a Vision Transformer (which captures global context in 3D scans) with a U-Net decoder (which produces fine-grained spatial predictions). We then extended it with physics-informed training objectives and a novel sequential prediction strategy that significantly improved results.</p>
     </section>
 

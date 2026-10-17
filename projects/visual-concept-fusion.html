@@ -69,7 +69,7 @@
 
     <section class="project-section reveal">
       <h2>Summary</h2>
-      <p>Visual Concept Fusion (VCF) enables dual conditioning of Stable Diffusion on both a text prompt and a reference image at inference time, without retraining the model. It trains a lightweight aligner network (a 2-layer MLP) that translates CLIP image embeddings into the CLIP text embedding space, allowing the frozen diffusion model to process visual and textual guidance together.</p>
+      <p>During my master’s at the University of Amsterdam, we developed Visual Concept Fusion (VCF), a method for dual conditioning of Stable Diffusion on both a text prompt and a reference image at inference time, without retraining the model. We trained a lightweight aligner network (a 2-layer MLP) that translates CLIP image embeddings into the CLIP text embedding space, allowing the frozen diffusion model to process visual and textual guidance together.</p>
       <p>An optional Prompt-Noise Optimization (PNO) step refines the generation at test time by iteratively adjusting the conditioning and initial noise to maximize visual similarity to the reference. The result is generated images that respect the text prompt while inheriting style, color palette, composition, and texture from the reference image.</p>
     </section>
 
